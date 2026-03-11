@@ -8,12 +8,16 @@ export default {
         extend: {
             colors: {
                 primary: {
-                    DEFAULT: '#2563eb', // Blue 600
-                    hover: '#1d4ed8',   // Blue 700
-                    light: '#eff6ff',   // Blue 50
+                    DEFAULT: '#2563eb', // Clean blue for buttons
+                    hover: '#1d4ed8',
+                    light: '#eff6ff',
                 },
-                secondary: '#6366f1', // Indigo 500
-                'background-light': '#f8fafc', // Slate 50
+                brand: {
+                    sidebar: '#1E3A8A', // Dark blue for sidebar (similar to image)
+                    bg: '#25449A',      // Main background dark blue
+                    card: '#FFFFFF',    // White for cards
+                },
+                secondary: '#6366f1',
                 'slate-950': '#020617',
             },
             fontFamily: {
