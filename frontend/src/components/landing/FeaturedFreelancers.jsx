@@ -1,11 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function FeaturedFreelancers() {
+    const navigate = useNavigate();
     return (
         <section className="space-y-4">
             <div className="flex items-center justify-between">
                 <h2 className="text-lg font-bold text-white tracking-wide">Featured Freelancers</h2>
-                <a href="#" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">View all</a>
+                <button onClick={() => navigate('/dashboard')} className="text-sm font-medium text-slate-300 hover:text-white transition-colors">View all</button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Card 1 */}
@@ -23,7 +25,10 @@ export default function FeaturedFreelancers() {
                         <span className="text-amber-500 text-xs font-bold">4.9</span>
                         <span className="text-slate-400 text-[10px] font-medium">(124)</span>
                     </div>
-                    <button className="w-full bg-blue-50 hover:bg-blue-100 text-primary font-bold py-2.5 rounded-lg text-sm transition-colors">
+                    <button 
+                        onClick={() => navigate('/dashboard')}
+                        className="w-full bg-blue-50 hover:bg-blue-100 text-primary font-bold py-2.5 rounded-lg text-sm transition-colors"
+                    >
                         Hire Now
                     </button>
                 </div>
@@ -43,7 +48,10 @@ export default function FeaturedFreelancers() {
                         <span className="text-amber-500 text-xs font-bold">5.0</span>
                         <span className="text-slate-400 text-[10px] font-medium">(89)</span>
                     </div>
-                    <button className="w-full bg-blue-50 hover:bg-blue-100 text-primary font-bold py-2.5 rounded-lg text-sm transition-colors">
+                    <button 
+                        onClick={() => navigate('/dashboard')}
+                        className="w-full bg-blue-50 hover:bg-blue-100 text-primary font-bold py-2.5 rounded-lg text-sm transition-colors"
+                    >
                         Hire Now
                     </button>
                 </div>
@@ -63,7 +71,10 @@ export default function FeaturedFreelancers() {
                         <span className="text-amber-500 text-xs font-bold">4.8</span>
                         <span className="text-slate-400 text-[10px] font-medium">(210)</span>
                     </div>
-                    <button className="w-full bg-blue-50 hover:bg-blue-100 text-primary font-bold py-2.5 rounded-lg text-sm transition-colors">
+                    <button 
+                        onClick={() => navigate('/dashboard')}
+                        className="w-full bg-blue-50 hover:bg-blue-100 text-primary font-bold py-2.5 rounded-lg text-sm transition-colors"
+                    >
                         Hire Now
                     </button>
                 </div>

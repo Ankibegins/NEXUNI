@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronDown, ExternalLink } from 'lucide-react';
 
 export default function Dashboard() {
@@ -8,23 +9,21 @@ export default function Dashboard() {
 
                 {/* Top Feature Banners */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="relative h-64 rounded-2xl overflow-hidden group cursor-pointer border border-white/5">
+                    <Link to="/my-freelance-service" className="relative h-64 rounded-2xl overflow-hidden group cursor-pointer border border-white/5 block">
                         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-brand-bg/50 z-10 transition-colors group-hover:from-slate-900/80"></div>
                         <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop" alt="Desk" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay" />
                         <div className="relative z-20 p-8 flex flex-col justify-end h-full">
-                            <span className="bg-primary text-white text-[10px] uppercase font-black px-3 py-1 rounded-sm w-max mb-3 tracking-widest">FREELANCE</span>
-                            <h3 className="text-2xl font-bold text-white">Add Freelance Service</h3>
+                            <h3 className="text-2xl font-bold text-white">MY Freelance Service</h3>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className="relative h-64 rounded-2xl overflow-hidden group cursor-pointer border border-white/5">
+                    <Link to="/services" className="relative h-64 rounded-2xl overflow-hidden group cursor-pointer border border-white/5 block">
                         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-emerald-900/50 z-10 transition-colors group-hover:from-slate-900/80"></div>
                         <img src="https://images.unsplash.com/photo-1544396821-4ea4ce1ded0c?q=80&w=2069&auto=format&fit=crop" alt="Plant" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay" />
                         <div className="relative z-20 p-8 flex flex-col justify-end h-full">
-                            <span className="bg-emerald-600 text-white text-[10px] uppercase font-black px-3 py-1 rounded-sm w-max mb-3 tracking-widest">STORE</span>
-                            <h3 className="text-2xl font-bold text-white">List New Products</h3>
+                            <h3 className="text-2xl font-bold text-white">Take Services</h3>
                         </div>
-                    </div>
+                    </Link>
                 </div>
 
                 {/* Analytics Overview */}
