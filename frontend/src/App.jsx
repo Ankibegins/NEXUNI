@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Landing from "./pages/Landing";
 import Dashboard from "./pages/Dashboard";
 import Services from "./pages/Services";
+import MyFreelanceService from "./pages/MyFreelanceService";
 
 import DashboardLayout from "./layouts/DashboardLayout";
 
@@ -22,6 +23,7 @@ export default function App() {
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/my-freelance-service" element={<MyFreelanceService />} />
         </Route>
       </Routes>
     </BrowserRouter>
